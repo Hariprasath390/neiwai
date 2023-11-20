@@ -1,0 +1,76 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+  ul {
+    list-style: none;
+  }
+  li {
+    margin: 0.25rem 0;
+  }
+  
+  a.underline-hover-effect {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .underline-hover-effect {
+    display: inline-block;
+    padding-bottom: 0.25rem; /* defines the space between text and underline */
+    position: relative;
+  }
+  
+  .underline-hover-effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.25s ease-out;
+  }
+  .underline-hover-effect:hover::before {
+    width: 100%;
+  }
+
+
+
+   /* <--- 2 -----> */
+
+
+   a.left-right {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    padding: 0 3px 6px 3px;
+  }
+  a.left-right:hover {
+    color: #000;
+  }
+  a.left-right::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, red, gold, green);
+    transform: scaleX(0);
+    transform-origin: top right;
+    transition: transform 0.3s ease;
+  }
+  a.left-right:hover::before {
+    transform: scaleX(1);
+    transform-origin: top left;
+  }
+
+
+
+  /* <--- 3 --> */
+
