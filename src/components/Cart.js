@@ -193,7 +193,7 @@ export default function Cart() {
 
                                       <div className="md:w-full sm:w-full  mt-1">
                                         <h2 className="sm:ml-12">
-                                          ${pro.Price}
+                                          ${pro.Price} !
                                         </h2>
                                       </div>
                                       <div className="md:w-full sm:w-full mt-2">
