@@ -191,7 +191,7 @@ export default function Cart() {
                                         </button>
                                       </div>
 
-                                      <div className="md:w-full sm:w-full  mt-1">
+                                      <div className="md:w-full sm:w-full  mt-2">
                                         <h2 className="sm:ml-12">
                                           ${pro.Price} !
                                         </h2>
